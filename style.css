@@ -102,6 +102,7 @@ html{
 .home .home-content a:hover{
     color: red;
     background: none;
+    transition: all 0.3s ease;
 }
 
 /*  Menu  Mobile  */
