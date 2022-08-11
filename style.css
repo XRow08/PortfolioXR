@@ -343,6 +343,9 @@ section .title::after{
 .skills .skills-content .right .ang::before{
     width: 97%;
 }
+.skills .skills-content .right .react::before{
+    width: 85%;
+}
 .skills .skills-content .right .java::before{
     width: 67%;
 }
