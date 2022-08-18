@@ -164,7 +164,7 @@ section .title::after{
     position: absolute;
     bottom:-12px;
     left: 50%;
-    font-size: 20px;
+    font-size: 18px;
     background: #fff;
     color: red;
     padding: 5px;
@@ -523,10 +523,6 @@ footer span a:hover{
 
 
 /*  responsivo  */
-
-@keyframes animate{
-     
-}
 
 @media (max-width: 1300px){
     .navbar .max-width{
