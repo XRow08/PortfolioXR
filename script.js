@@ -16,7 +16,7 @@ $(document).ready(function(){
      });
 
      var typed = new Typed(".typing", {
-         strings:["Dev FullStack", "Programador", "Designer", "Freelancer"],
+         strings:["Designs", "Sistemas", "WebSites", "LandingPages"],
          typeSpeed:100,
          backSpeed:60,
          loop:true
@@ -28,7 +28,7 @@ $(document).ready(function(){
         loop:true
     });
 
-    $('.menu-btn').click(function(){
+    $('.menu-btn, .menu a').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
