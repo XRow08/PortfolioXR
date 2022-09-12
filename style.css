@@ -95,7 +95,7 @@ html{
     color:red ;
     font-weight: 500;
 }
-.home .home-content a{
+.home a{
     display: inline-block;
     background: red;
     color: #fff;
@@ -105,7 +105,7 @@ html{
     border-radius: 6px;
     border: 2px solid red;
 }
-.home .home-content a:hover{
+.home a:hover{
     color: red;
     background: none;
     transition: all 0.3s ease;
@@ -259,18 +259,6 @@ section .title::after{
 .about .about-content .right p{
     text-align: justify;
 }
-.about .about-content .right a{
-    display: inline-block;
-    background: red;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid red;
-    transition: all 0.3s ease;
-}
 .about .about-content .right a:hover{
     color: red;
     background: none;
@@ -298,6 +286,7 @@ section .title::after{
     height: 300px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background: #222;
     text-align: center;
     border-radius: 10px;
@@ -310,21 +299,42 @@ section .title::after{
 .services .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.services .serv-content .card ion-icon{
+.services .serv-content .card i{
     font-size: 70px;
-    color: red;
+    color: rgb(255, 0, 0);
 }
-.services .serv-content .card:hover ion-icon{
-    color: rgb(0, 0, 0);
+.services .serv-content .card:hover i{
+    color: rgb(255, 255, 255);
 }
-.services .serv-content .card .text{
+.services .serv-content .card h1{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+.services .serv-content .card .box p{
+    text-align: center;
+}
+
+.services .serv-content .card .box a{
+    display: inline-block;
+    background: red;
+    color: #111;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid red;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.services .serv-content .card .box a:hover{
+    color: rgb(255, 255, 255);
+    background: none;
+}
+
 /*  sessão especialidades  */
 .skills .title::after{
     content: "O que fazemos";
@@ -532,6 +542,7 @@ section .title::after{
 .container-contact .card .icons i{
     position: relative;
     top: -15px;
+    font-size: 50px;
 }
 
 .container-contact .card .icons h2{
@@ -614,7 +625,7 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 35px;
     }
-    .home .home-content a{
+    .home a{
         font-size: 23px;
         padding: 10px 30px;
     }
@@ -664,7 +675,7 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 32px;
     }
-    .home .home-content a{
+    .home a{
         font-size: 20px;
     }
     .services .serv-content .card {
@@ -672,16 +683,26 @@ footer span a:hover{
         height: 100%;
     }
 }
-@media (max-width: 500px){
+@media (max-width: 425px){
     .home .home-content .text-2{
         font-size: 50px;
     }
     .home .home-content .text-3{
         font-size: 27px;
+        height: 4rem;
+        width: 10rem;
+    }
+
+    .about .about-content .left img{
+        height: 15rem;
+    }
+    .about .about-content .right .text{
+        height: 4rem;
+        width: 15rem;
     }
 
     .container-contact .card {
-        width: 100px;
+        width:100px;
         height: 100px;
     }
 
@@ -692,13 +713,25 @@ footer span a:hover{
 
     .container-contact .card .icons i{
         top: 0px;
+        font-size: 50px;
     }
 }
 
-@media (max-width: 360px){    
+@media (max-width: 375px){ 
+    .container-contact .card .icons i{
+       font-size: 40px;
+    }
     .container-contact .card {
         width: 70px;
         height: 70px;
         box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.9);
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+        height: 4rem;
+        width: 10rem;
+    }
+    .skills .title::after {
+        font-size: 17px;
     }
 }
