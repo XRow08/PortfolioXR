@@ -240,7 +240,7 @@ section .title::after{
 /*  sessão sobre  */
 
 .about .title::after{
-    content: "Fundador";
+    content: "Equipe";
 }
 .about .about-content .left{
     width: 45%;
@@ -264,8 +264,8 @@ section .title::after{
     background: none;
 }
 .about .about-content .left img{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 50%;
 }
